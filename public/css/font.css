@@ -1,0 +1,20 @@
+.title{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 15px;
+    font-weight: unset;
+}
+
+h1{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 17px;
+    font-weight: bold;
+    color: #F1F1F1;
+}

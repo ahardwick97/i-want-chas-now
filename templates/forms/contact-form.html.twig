@@ -1,0 +1,16 @@
+<div class="contact-container">
+    <form action="{{ path("contact-form") }}" method="post">
+        <h1>Contact</h1>
+        <div class="row">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="fullname" placeholder="Full Name">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email">
+            <label for="telephone">Telephone</label>
+            <input type="text" id="telephone" name="telephone" placeholder="Telephone">
+            <label for="message">Message</label>
+            <textarea name="message" rows="5" cols="115" type="text" id="message" placeholder="Enter your message"></textarea>
+        </div>
+        <input type="submit" value="Submit" class="btn-submit">
+    </form>
+</div>

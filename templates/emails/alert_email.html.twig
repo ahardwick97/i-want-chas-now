@@ -1,0 +1,13 @@
+{% apply inline_css(source('@css/email.css')) %}
+    <div class="email">
+        <br>
+        <p>New contact request submitted.</p>
+        <p>Name: {{ fullname }} </p>
+        <p>Email: {{ email2 }} </p>
+        <p>Telephone: {{ telephone }}</p>
+        <p>Message: {{ message }}</p>
+        <br>
+    </div>
+{% endapply %}
+
+

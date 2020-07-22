@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+              crossorigin="anonymous">
+        <link href="{{ asset('css/navbar.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('css/font.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('css/form.css') }}" rel="stylesheet"/>
+        <link href="{{ asset('css/email.css') }}" rel="stylesheet"/>
+    {% endblock %}
+</head>
+<body>
+<header>
+    <nav class="navbar2 navbar fixed-top navbar-expand-lg bg-dark navbar-dark">
+        <a class="navbar-brand" href="{{ path('home') }}">
+            <img src="{{ asset('images/iwantchasnow.png') }}" alt="Employers Advice" style="width:150px;"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="{{ path('home') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ path('what-is-chas') }}">What is Chas?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ path('how-get-chas') }}">How do I get Chas?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ path('what-next') }}">What do i do next?</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ path('contact-us') }}">Contact Us</a>
+                </li>
+
+
+            </ul>
+            <div class="nav navbar-nav navbar-right ml-auto navbar-text">
+                <a>
+                    <p>
+                        Contact us now: (+44) 0800 849 6728
+                    </p>
+                </a>
+            </div>
+        </div>
+
+
+        </div>
+    </nav>
+</header>
+</body>
+
+{% block body %}{% endblock %}
+</div>
+
+{% block javascripts %}
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+{% endblock %}
+
+<div id="footer">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="footer-text">
+                <p style="color:white;">I Want CHAS Now is part of HS Direct Ltd. You can visit www.hsdirect.co.uk to
+                    find
+                    details of our other Health & Safety services. HS Direct Ltd specialise in supplying customers
+                    throughout
+                    the UK with Health & Safety services including assistance with your CHAS assessment.</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="footer-text">
+                <h3>Contact us</h3>
+                <p style="color:white;">Meadowhall House,
+                    3 Hayland St,
+                    Sheffield
+                    S9 1BY</p>
+                <p style="color:white;">Tel: 0800 849 6728</p>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="map">
+                <h3>Map</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2378.161523610212!2d-1.4218296839740103!3d53.411937377497004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879778f2af96ae3%3A0x95ce5829e74fc629!2sHS+Direct+Ltd!5e0!3m2!1sen!2suk!4v1469131936703"
+                        width="100%" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="constructzine-lite-copyright">
+                    <a href="https://themeisle.com/themes/constructzine-lite/" target="_blank" rel="nofollow">Constructzine
+                        Lite </a>powered by<a href="https://themeisle.com/themes/constructzine-lite/" target="_blank"
+                                              rel="nofollow">WordPress</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

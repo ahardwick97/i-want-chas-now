@@ -1,0 +1,54 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0px 16px 0px 14px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    color: #8a8a8a;
+    text-decoration: none;
+}
+
+li :active{
+}
+
+.fixed-top-2 {
+    margin-top: 56px;
+}
+
+#login{
+float: right;
+}
+
+.navbar2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+body {
+    padding-top: 68px;
+
+}
+
+.navbar-text{
+    display: block;
+    padding: 0px 16px 0px 14px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 16px;
+    text-align: center;
+
+
+}
